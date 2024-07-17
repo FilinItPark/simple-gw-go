@@ -1,0 +1,5 @@
+rules:
+  - from: /api/user
+    to: http://localhost:8080
+  - from: /api/lesson
+    to: http://localhost:8081
