@@ -6,8 +6,10 @@ import (
 )
 
 type Rule struct {
-	From string `yaml:"from"`
-	To   string `yaml:"to"`
+	From         string   `yaml:"from"`
+	To           string   `yaml:"to"`
+	AuthRequired bool     `yaml:"auth_required"`
+	Roles        []string `yaml:"roles"`
 }
 
 type Config struct {

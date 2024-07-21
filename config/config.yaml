@@ -1,5 +1,9 @@
 rules:
   - from: /api/user
     to: http://localhost:8080
+    auth_required: true
+    roles: ["admin", "user"]
   - from: /api/lesson
     to: http://localhost:8081
+    auth_required: false
+    roles: []
